@@ -52,6 +52,8 @@ const App = () => {
 And now, we'll edit the `onKeyDown` handler to make it so that when you press `control-B`, it will add a `bold` format to the currently selected text:
 
 ```jsx
+import { Text } from 'slate'
+
 const App = () => {
   const editor = useMemo(() => withReact(createEditor()), [])
   const [value, setValue] = useState([
